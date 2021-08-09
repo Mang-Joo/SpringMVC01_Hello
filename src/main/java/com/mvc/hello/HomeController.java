@@ -36,5 +36,13 @@ public class HomeController {
         return "home";
     }
 
+    @RequestMapping(value = "/command.do", method = RequestMethod.GET)
+    public String getCommand(Model model, String name, String addr, String phone) {
+        System.out.println(name + ", " + addr + ", " + phone);
+
+
+        return "home";
+    }
+
 
 }
